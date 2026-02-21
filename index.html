@@ -667,10 +667,17 @@
                     <div class="section-label"><i class="fa-solid fa-sliders"></i> Status</div>
                     <div class="status-group">
                         <div class="toggle-row">
-                            <div class="t-label">Beneficiaries</div>
+                            <div class="t-label"><i class="fa-solid fa-building-columns" style="color:#aaa"></i> Beneficiaries</div>
                             <div class="neu-switch">
                                 <label><input type="radio" name="ben_${uid}" value="No" class="neu-inp" ${item.gov !== 'Yes' ? 'checked' : ''}><div class="neu-opt">No</div></label>
                                 <label><input type="radio" name="ben_${uid}" value="Yes" class="neu-inp" ${item.gov === 'Yes' ? 'checked' : ''}><div class="neu-opt">Yes</div></label>
+                            </div>
+                        </div>
+                        <div class="toggle-row">
+                            <div class="t-label"><i class="fa-solid fa-envelope" style="color:#aaa"></i> Postal Vote</div>
+                            <div class="neu-switch">
+                                <label><input type="radio" name="postal_${uid}" value="No" class="neu-inp" checked><div class="neu-opt">No</div></label>
+                                <label><input type="radio" name="postal_${uid}" value="Yes" class="neu-inp"><div class="neu-opt">Yes</div></label>
                             </div>
                         </div>
                     </div>
@@ -681,6 +688,7 @@
                     </div>
                     <div class="actions">
                         <button class="act-btn btn-submit" onclick="alert('Demo: Update logic would go here')">Submit Entry</button>
+                        <button type="button" class="act-btn btn-new" onclick="alert('Demo: New entry form would open here')"><i class="fa-solid fa-plus"></i> New</button>
                     </div>
                 </div>
                 `;
